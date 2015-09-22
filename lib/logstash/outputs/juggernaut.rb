@@ -95,7 +95,7 @@ class LogStash::Outputs::Juggernaut < LogStash::Outputs::Base
   end # def receive
 
   public
-  def teardown
+  def close
     if @data_type == 'channel' and @redis
       @redis.quit
       @redis = nil
