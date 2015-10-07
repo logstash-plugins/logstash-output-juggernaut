@@ -72,7 +72,7 @@ class LogStash::Outputs::Juggernaut < LogStash::Outputs::Base
 
   public
   def receive(event)
-    return unless output?(event)
+    
     begin
       @redis ||= connect
       if @message_format
