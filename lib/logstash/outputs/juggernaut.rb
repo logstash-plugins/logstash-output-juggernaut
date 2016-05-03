@@ -82,7 +82,7 @@ class LogStash::Outputs::Juggernaut < LogStash::Outputs::Base
       end
       juggernaut_message = {
         "channels" => @channels.collect{ |x| event.sprintf(x) },
-        "data" => event["message"]
+        "data" => event.get("message")
       }
 
       @redis.publish 'juggernaut', LogStash::Json.dump(juggernaut_message)
