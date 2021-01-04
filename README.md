@@ -1,6 +1,6 @@
 # Logstash Plugin
 
-[![Travis Build Status](https://travis-ci.org/logstash-plugins/logstash-output-juggernaut.svg)](https://travis-ci.org/logstash-plugins/logstash-output-juggernaut)
+[![Travis Build Status](https://travis-ci.com/logstash-plugins/logstash-output-juggernaut.svg)](https://travis-ci.com/logstash-plugins/logstash-output-juggernaut)
 
 This is a plugin for [Logstash](https://github.com/elastic/logstash).
 
